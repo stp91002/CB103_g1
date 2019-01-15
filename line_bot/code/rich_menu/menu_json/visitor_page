@@ -1,0 +1,73 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "visitor_page",
+  "chatBarText": "查看訪客選單",
+  "areas": [
+    {
+      "bounds": {
+        "x": 521,
+        "y": 119,
+        "width": 288,
+        "height": 627
+      },
+      "action": {
+        "type": "postback",
+        "text": "加入會員",
+        "data": "where=visitor_page&action=join"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1013,
+        "y": 119,
+        "width": 301,
+        "height": 627
+      },
+      "action": {
+        "type": "uri",
+        "uri": "line://app/1633203561-1wWMw7Qe"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1530,
+        "y": 114,
+        "width": 301,
+        "height": 623
+      },
+      "action": {
+        "type": "uri",
+        "uri": "line://app/1633203561-o3r0db6N"
+      }
+    },
+    {
+      "bounds": {
+        "x": 2042,
+        "y": 127,
+        "width": 301,
+        "height": 615
+      },
+      "action": {
+        "type": "uri",
+        "uri": "line://app/1633203561-OJ0l7ejE"
+      }
+    },
+    {
+      "bounds": {
+        "x": 229,
+        "y": 589,
+        "width": 237,
+        "height": 250
+      },
+      "action": {
+        "type": "postback",
+        "text": "回主頁",
+        "data": "where=visitor_page&action=go_home"
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "group_page",
+  "chatBarText": "公司團體選單",
+  "areas": [
+    {
+      "bounds": {
+        "x": 479,
+        "y": 114,
+        "width": 318,
+        "height": 644
+      },
+      "action": {
+        "type": "postback",
+        "text": "檢視個人資料",
+        "data": "where=group_page&action=user_data"
+      }
+    },
+    {
+      "bounds": {
+        "x": 941,
+        "y": 110,
+        "width": 317,
+        "height": 653
+      },
+      "action": {
+        "type": "postback",
+        "text": "購買商品",
+        "data": "where=group_page&action=product"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1415,
+        "y": 119,
+        "width": 331,
+        "height": 644
+      },
+      "action": {
+        "type": "postback",
+        "text": "訂單上架",
+        "data": "where=group_page&action=uplist"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1932,
+        "y": 123,
+        "width": 330,
+        "height": 640
+      },
+      "action": {
+        "type": "postback",
+        "text": "檢視交易資料",
+        "data": "where=group_page&action=get_transaction_lists"
+      }
+    },
+    {
+      "bounds": {
+        "x": 225,
+        "y": 567,
+        "width": 233,
+        "height": 241
+      },
+      "action": {
+        "type": "postback",
+        "text": "回主頁",
+        "data": "where=group_page&action=go_home"
+      }
+    }
+  ]
+}

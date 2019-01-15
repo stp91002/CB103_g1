@@ -1,0 +1,61 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "home_page",
+  "chatBarText": "查看主選單",
+  "areas": [
+    {
+      "bounds": {
+        "x": 314,
+        "y": 114,
+        "width": 317,
+        "height": 628
+      },
+      "action": {
+        "type": "uri",
+        "uri": "line://app/1633203561-8jrjm5Bp"
+      }
+    },
+    {
+      "bounds": {
+        "x": 860,
+        "y": 102,
+        "width": 314,
+        "height": 635
+      },
+      "action": {
+        "type": "uri",
+        "uri": "line://app/1633203561-DvA92Qv7"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1407,
+        "y": 110,
+        "width": 297,
+        "height": 623
+      },
+      "action": {
+        "type": "postback",
+        "text": "會員專區",
+        "data": "where=home_page&action=switch"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1970,
+        "y": 119,
+        "width": 297,
+        "height": 623
+      },
+      "action": {
+        "type": "postback",
+        "text": "品質鑑定",
+        "data": "where=home_page&action=quality"
+      }
+    }
+  ]
+}

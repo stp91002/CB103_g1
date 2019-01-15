@@ -1,0 +1,63 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "person_page",
+  "chatBarText": "個人會員選單",
+  "areas": [
+    {
+      "bounds": {
+        "x": 551,
+        "y": 106,
+        "width": 326,
+        "height": 661
+      },
+      "action": {
+        "type": "postback",
+        "text": "檢視個人資料",
+        "data": "where=person_page&action=user_data"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1089,
+        "y": 106,
+        "width": 322,
+        "height": 652
+      },
+      "action": {
+        "type": "postback",
+        "text": "購買商品",
+        "data": "where=person_page&action=product"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1614,
+        "y": 119,
+        "width": 322,
+        "height": 640
+      },
+      "action": {
+        "type": "postback",
+        "text": "檢視交易資料",
+        "data": "where=person_page&action=get_transaction_lists"
+      }
+    },
+    {
+      "bounds": {
+        "x": 225,
+        "y": 567,
+        "width": 233,
+        "height": 241
+      },
+      "action": {
+        "type": "postback",
+        "text": "回主頁",
+        "data": "where=person_page&action=go_home"
+      }
+    }
+  ]
+}

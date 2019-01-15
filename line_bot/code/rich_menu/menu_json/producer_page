@@ -1,0 +1,76 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "producer_page",
+  "chatBarText": "生產者選單",
+  "areas": [
+    {
+      "bounds": {
+        "x": 572,
+        "y": 102,
+        "width": 369,
+        "height": 635
+      },
+      "action": {
+        "type": "postback",
+        "text": "檢視個人資料",
+        "data": "where=producer_page&action=user_data"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1081,
+        "y": 93,
+        "width": 385,
+        "height": 649
+      },
+      "action": {
+        "type": "postback",
+        "text": "商品登錄",
+        "data": "where=producer_page&action=product"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1614,
+        "y": 89,
+        "width": 369,
+        "height": 657
+      },
+      "action": {
+        "type": "postback",
+        "text": "檢視商品",
+        "data": "where=producer_page&action=product_data"
+      }
+    },
+    {
+      "bounds": {
+        "x": 2072,
+        "y": 106,
+        "width": 377,
+        "height": 640
+      },
+      "action": {
+        "type": "postback",
+        "text": "檢視交易資料",
+        "data": "where=producer_page&action=get_transaction_lists"
+      }
+    },
+    {
+      "bounds": {
+        "x": 271,
+        "y": 555,
+        "width": 280,
+        "height": 254
+      },
+      "action": {
+        "type": "postback",
+        "text": "回主頁",
+        "data": "where=producer_page&action=go_home"
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+version: '2'
+
+services:
+
+  db:
+    image: mysql:5.7
+    container_name: chatbot_db
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=iii
+    volumes:
+      - ./mysql_db/mysql_data:/var/lib/mysql
+      - ./mysql_db/mysql_init:/docker-entrypoint-initdb.d/
+    networks:
+      - elk
+
+  api:
+    image: liangrong3020/my_elk_api
+    container_name: chatbot_api
+    user: root
+    environment:
+      - GRANT_SUDO=yes
+    ports:
+      - "8880:8888"
+      - "5001:5000"
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - ./mysql_db/code:/home/jovyan/work/
+      - /etc/localtime:/etc/localtime
+    command: start-notebook.sh --NotebookApp.token=''
+    networks:
+      - elk
+    
+  jupyter-tutorial_2:
+    build:
+      context: ./line_bot/dockerfile
+      dockerfile: dockerfile-jupyter
+    container_name: chatbot_line
+    depends_on:
+      - api
+    ports:
+      - "8889:8888"
+      - "80:5000"
+    command: start-notebook.sh --NotebookApp.token=''
+    volumes:
+      - ./line_bot/code:/home/jovyan/work
+      - /etc/localtime:/etc/localtime
+    networks:
+      - elk
+
+
+  ngrok-external-dns:
+    build:
+      context: ./line_bot/dockerfile
+      dockerfile: dockerfile-ngrok
+    container_name: chatbot_ngrok
+    ports:
+      - "4040:4040"
+    command: ngrok http chatbot_line:5000
+    networks:
+      - elk
+
+
+
+networks:
+  elk:
+    driver: bridge

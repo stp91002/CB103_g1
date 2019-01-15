@@ -1,0 +1,74 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 843
+  },
+  "selected": true,
+  "name": "quality_page",
+  "chatBarText": "品質查詢選單",
+  "areas": [
+    {
+      "bounds": {
+        "x": 550,
+        "y": 140,
+        "width": 280,
+        "height": 618
+      },
+      "action": {
+        "type": "uri",
+        "uri": "line://app/1633203561-PmAN3047"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1047,
+        "y": 127,
+        "width": 293,
+        "height": 623
+      },
+      "action": {
+        "type": "postback",
+        "text": "上傳照片",
+        "data": "where=quality_page&action=upload_picture"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1559,
+        "y": 144,
+        "width": 280,
+        "height": 606
+      },
+      "action": {
+        "type": "uri",
+        "uri": "line://app/1633203561-pvo7G1yN"
+      }
+    },
+    {
+      "bounds": {
+        "x": 2148,
+        "y": 34,
+        "width": 271,
+        "height": 258
+      },
+      "action": {
+        "type": "postback",
+        "text": "回首頁",
+        "data": "where=quality_page&action=go_home"
+      }
+    },
+    {
+      "bounds": {
+        "x": 2229,
+        "y": 572,
+        "width": 250,
+        "height": 242
+      },
+      "action": {
+        "type": "postback",
+        "text": "品質鑑定",
+        "data": "where=egg&by=sun"
+      }
+    }
+  ]
+}
